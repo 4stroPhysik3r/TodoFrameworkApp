@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="javascript">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Placeholder Favicon -->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <link rel="stylesheet" href="styles.css" />
+    <script src="framework.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Todo App</title>
+  </head>
+
+  <body>
+    <h1>ToDo</h1>
+    <section class="todoApp">
+      <header class="header">
+        <input class="new-todo" placeholder="What to do?" autofocus="" />
+      </header>
+
+      <main class="main">
+        <input id="toggle-all" class="toggle-all" type="checkbox" />
+        <label for="toggle-all"></label>
+        <ul class="todo-list">
+        </ul>
+      </main>
+
+      <section class="section">
+        <span class="todo-count"><strong>0</strong> items left</span>
+
+        <ul class="filters">
+          <li>
+            <a href="#/" class="selected">All</a>
+          </li>
+          <li>
+            <a href="#/active" class="">Active</a>
+          </li>
+          <li>
+            <a href="#/completed" class="">Completed</a>
+          </li>
+        </ul>
+        <button class="clear-completed">Clear completed</button>
+      </section>
+    </section>
+  </body>
+</html>
